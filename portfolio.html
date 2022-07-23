@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Портфолио</title>
+    <title>Портфоліо</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
@@ -18,15 +18,24 @@
         <nav class="page-nav">
             <a class="logo link" href="">Web<span class="logo-color">Studio</span></a>
             <ul class="menu list">
-                <li class="menu-item"><a class="menu-link  link " href="./index.html">Студия</a></li>
-                <li class="menu-item"><a class="menu-link link current" href="./portfolio.html">Портфолио</a></li>
-                <li class="menu-item"><a class="menu-link link" href="">Контакты</a></li>
+                <li class="menu-item"><a class="menu-link  link " href="./index.html">Студія</a></li>
+                <li class="menu-item"><a class="menu-link link current" href="./portfolio.html">Портфоліо</a></li>
+                <li class="menu-item"><a class="menu-link link" href="">Контакти</a></li>
             </ul>
         </nav>
         <ul class="contact list">
-            <li class="contact-item"><a class="contact-mail link" href="mailto:info@devstudio.com">info@devstudio.com
-                </a></li>
-            <li class="contact-item"><a class="contact-tel link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+            <li class="contact-item">
+                <svg class="contact-icon-mail">
+                    <use href="./images/symbol.svg#mail"></use>
+                </svg>
+                <a class="contact-mail link" href="mailto:info@devstudio.com">info@devstudio.com </a>
+            </li>
+            <li class="contact-item">
+                <svg class="contact-icon-tel">
+                    <use href="./images/symbol.svg#smartphone"></use>
+                </svg>
+                <a class="contact-tel link" href="tel:+380961111111">+38 096 111 11 11</a>
+            </li>
         </ul>
     </div>
 </header>
@@ -34,10 +43,10 @@
         <section class="portf-page section">
             <div class="container">
                <ul class="filter list">
-            <li class="filter-item"><button class="filter-btn" type="button">Все</button></li>
-            <li class="filter-item"><button class="filter-btn" type="button">Веб-сайты</button></li>
-            <li class="filter-item"><button class="filter-btn" type="button">Приложения</button></li>
-            <li class="filter-item"><button class="filter-btn" type="button"> Дизайн</button></li>
+            <li class="filter-item"><button class="filter-btn" type="button">Всі</button></li>
+            <li class="filter-item"><button class="filter-btn" type="button">Веб-сайти</button></li>
+            <li class="filter-item"><button class="filter-btn" type="button">Додатки</button></li>
+            <li class="filter-item"><button class="filter-btn" type="button">Дизайн</button></li>
             <li class="filter-item"><button class="filter-btn" type="button">Маркетинг</button></li>
         </ul> 
             </div>
@@ -61,7 +70,7 @@
     <li class="projects-item"><img src="./images/seafood.jpg" alt="приложение ресторана" width="370">
         <div class="project-text">
             <h3 class="proj-name">Ресторан Seafood</h3>
-            <p class="kind-proj">Приложение</p>
+            <p class="kind-proj">Додаток</p>
         </div>
     </li>
     <li class="projects-item"><img src="./images/prime.jpg" alt="маркетинг проект прайм" width="370">
@@ -73,7 +82,7 @@
     <li class="projects-item"><img src="./images/Boxes.jpg" alt="приложение коробки" width="370">
         <div class="project-text">
             <h3 class="proj-name">Проект Boxes</h3>
-            <p class="kind-proj">Приложение</p>
+            <p class="kind-proj">Додаток</p>
         </div>
     </li>
     <li class="projects-item"><img src="./images/inspiration.jpg" alt="веб-сайт вдохновение" width="370">
@@ -97,7 +106,7 @@
     <li class="projects-item"><img src="./images/growing-business.jpg" alt="приложение растущий бизнес" width="370">
         <div class="project-text">
             <h3 class="proj-name">Growing Business</h3>
-            <p class="kind-proj">Приложение</p>
+            <p class="kind-proj">Додаток</p>
         </div>
     </li>
 </ul>
@@ -108,17 +117,53 @@
     </main>
     
     <footer class="down">
-        <div class="container">
-            <a class="logo link" href="">Web<span class="logo-second-color">Studio</span></a>
-            <address>
-                <ul class="adress-list list">
-                    <li><a class="address-link link" href="https://goo.gl/maps/29r4Vdm6cdgo4i6k8">г. Киев, пр-т Леси
-                            Украинки,26</a></li>
-                    <li class="adress-item-mail"><a class="mail-link link"
-                            href="mailto:info@devstudio.com">info@devstudio.com </a></li>
-                    <li><a class="tel-link link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+        <div class="container footer-container">
+            <div>
+                <a class="logo link" href="">Web<span class="logo-second-color">Studio</span></a>
+                <address>
+                    <ul class="list">
+                        <li><a class="address-link link" href="https://goo.gl/maps/29r4Vdm6cdgo4i6k8">м. Київ, пр-т Лесі
+                                Українки, 26</a></li>
+                        <li class="adress-item-mail"><a class="mail-link link"
+                                href="mailto:info@devstudio.com">info@devstudio.com </a></li>
+                        <li><a class="tel-link link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                    </ul>
+                </address>
+            </div>
+            <div class="invite">
+                <h3 class="invite-head">Приєднуйтесь</h3>
+                <ul class="social-list list">
+                    <li class="social-list-item">
+                        <a href="" class="social-list-link flink">
+                            <svg class="social-list-icon ficon">
+                                <use href="./images/symbol.svg#instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-list-item">
+                        <a href="" class="social-list-link flink">
+                            <svg class="social-list-icon ficon">
+                                <use href="./images/symbol.svg#twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-list-item">
+                        <a href="" class="social-list-link flink">
+                            <svg class="social-list-icon ficon">
+                                <use href="./images/symbol.svg#facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-list-item">
+                        <a href="" class="social-list-link flink">
+                            <svg class="social-list-icon ficon">
+                                <use href="./images/symbol.svg#linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
                 </ul>
-            </address>
+            </div>
+    
         </div>
     </footer>
 </body>
