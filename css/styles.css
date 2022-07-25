@@ -109,17 +109,17 @@ body{
         margin-right: 50px;
         gap: 10px;
 }
-.contact-mail,
-.contact-tel {
+.contacts{
         font-weight: 500;
         line-height: 1.14;
         letter-spacing: 0.02em;
         color: var(--second-color);
+        display: flex;
+        align-items: center;
+        gap: 10px;
 }
-.contact-mail:hover,
-.contact-mail:focus,
-.contact-tel:hover,
-.contact-tel:focus {
+.contacts:hover,
+.contacts:focus {
     color: var(--accent-color);
 }
 .contact-icon-mail{
@@ -132,10 +132,10 @@ body{
         height: 16px;
         fill: var(--second-color);
 }
-.contact-item:hover .contact-icon-mail,
-.contact-item:focus .contact-icon-mail,
-.contact-item:hover .contact-icon-tel,
-.contact-item:focus .contact-icon-tel
+.contacts:hover .contact-icon-mail,
+.contacts:focus .contact-icon-mail,
+.contacts:hover .contact-icon-tel,
+.contacts:focus .contact-icon-tel
  {
         fill: var(--accent-color);
 }
@@ -295,29 +295,31 @@ body{
         justify-content: space-between;
         align-items: center;
 }
-.partners-list-item{
-       display: flex;
-       justify-content: center;
-       align-items: center;
+.partners-list-link{
+        display: flex;
+        justify-content: center;
+        align-items: center;
         border: 1px solid var(--icons-color);
         border-radius: 4px;
         width: 170px;
         height: 92px;
-        
 }
 .partners-list-icon{
         fill: var(--icons-color);
 
 }
 
-.partners-list-item:hover .partners-list-icon ,
-.partners-list-item:focus .partners-list-icon {
+.partners-list-item:hover .partners-list-icon,
+.partners-list-link:focus .partners-list-icon{
         fill: var(--accent-color);
 }
-.partners-list-item:hover ,
-.partners-list-item:focus {
+.partners-list-link:hover,
+.partners-list-link:focus{
         border: 1px solid var(--accent-color);
 }
+
+
+
 /* footer styles */
 .down{
         background-color: var(--backg-color);
@@ -368,6 +370,7 @@ color: var(--third-color);
 }
 .invite-head{    
         font-weight: 700;
+        font-size: 14px;
         line-height: 1.14;
         letter-spacing: 0.03em;
         text-transform: uppercase;
